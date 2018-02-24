@@ -70,6 +70,9 @@ h4,
 h5 {
   color: #fff; }
 
+.app-container {
+  height: 100vh; }
+
 .app-container,
 .panel-container {
   display: flex;
@@ -220,7 +223,8 @@ a.link {
       width: 100%;
       padding-top: 0;
       box-shadow: none;
-      border-top: 1px solid #8790a5; } }
+      border-top: 1px solid #8790a5;
+      border-right: none; } }
   .app-navigation .logo,
   .app-navigation .account-link {
     margin: 0;
@@ -328,6 +332,13 @@ a.link {
   @media screen and (max-width: 420px) {
     .journal {
       width: calc(100% - 40px); } }
+
+.panel-journal {
+  overflow-y: auto; }
+  @media screen and (max-width: 768px) {
+    .panel-journal {
+      flex: initial;
+      height: calc(100vh - 124px); } }
 
 .journal-input {
   display: flex;
@@ -454,10 +465,12 @@ a.link {
   align-items: center; }
 
 .modal-bg {
+  flex: 1;
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
+  left: 0;
   background: rgba(255, 255, 255, 0.6); }
 
 .modal-container {
@@ -617,6 +630,9 @@ li.date-selector-weekday {
   overflow-y: auto;
   height: 100vh;
   background-color: #141720; }
+  @media screen and (max-width: 768px) {
+    .calendar {
+      height: calc(100vh - 144px); } }
 
 .calendar-today-weekday {
   color: #8790a5;
@@ -708,6 +724,13 @@ li.date-selector-weekday {
   @media screen and (max-width: 420px) {
     .steplist {
       width: calc(100% - 40px); } }
+
+.panel-steplist {
+  overflow-y: auto; }
+  @media screen and (max-width: 768px) {
+    .panel-steplist {
+      flex: initial;
+      height: calc(100vh - 124px); } }
 
 .steplist-firststep {
   display: flex;
