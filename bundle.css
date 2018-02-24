@@ -622,14 +622,12 @@ li.date-selector-weekday {
       border-left: none; } }
 
 .calendar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-right: 20px;
   padding-left: 20px;
   overflow-y: auto;
   height: 100vh;
-  background-color: #141720; }
+  background-color: #141720;
+  text-align: center; }
   @media screen and (max-width: 768px) {
     .calendar {
       height: calc(100vh - 144px); } }
@@ -650,6 +648,7 @@ li.date-selector-weekday {
   margin-bottom: 24px; }
 
 .calendar-table {
+  margin: auto;
   border-spacing: 6px; }
 
 .calendar-month-name {
@@ -663,7 +662,7 @@ li.date-selector-weekday {
   justify-content: space-between;
   width: 162px;
   padding: 0;
-  margin: 0 0 14px 0;
+  margin: 0 auto;
   list-style: none; }
 
 .calendar-weekday {
