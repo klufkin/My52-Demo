@@ -356,6 +356,11 @@ a.link {
   text-align: center;
   margin-bottom: 10px; }
 
+.journal-entry-edit-mode {
+  border: 1px solid #caccd6;
+  border-radius: 4px;
+  padding: 10px; }
+
 .journal-entry-container {
   display: flex;
   align-items: center; }
@@ -380,32 +385,60 @@ a.link {
 /* ---------------------------------------- ENTRY EDIT ---------------------------------------- */
 .journal-entry-edit {
   display: flex;
-  justify-content: space-between;
-  margin: 10px 0 15px 35px; }
+  margin: 12px 0 2px 35px; }
 
 .journal-entry-edit-right-panel {
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
   position: relative; }
 
+.entry-calendar-edit {
+  margin-right: 20px; }
+
 .entry-calendar-edit-date {
-  margin-bottom: 8px; }
+  height: 64px;
+  width: 67px;
+  border-radius: 4px;
+  border: solid 1px #caccd6;
+  font-size: 18px;
+  cursor: pointer; }
+  .entry-calendar-edit-date:hover {
+    border-color: #8790a5; }
+    .entry-calendar-edit-date:hover .entry-calendar-edit-body {
+      color: #8790a5; }
+    .entry-calendar-edit-date:hover .entry-calendar-edit-header {
+      color: #8790a5;
+      border-color: #8790a5; }
+
+.entry-calendar-edit-header {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  padding: 4px 0;
+  border-bottom: 2px solid #caccd6; }
+
+.entry-calendar-edit-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 39px; }
+
+.entry-color-selection {
+  margin-right: 18px; }
 
 .entry-color-option {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 100%;
-  margin: 0 10px 10px 0; }
+  margin: 0 14px 14px 0; }
   .entry-color-option:hover {
-    border: 1px solid rgba(255, 255, 255, 0.75);
+    border: 2px solid rgba(255, 255, 255, 0.75);
     cursor: pointer; }
 
 .entry-edit-buttons {
-  display: flex; }
-  .entry-edit-buttons button:first-child {
-    margin-right: 14px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 /* ---------------------------------------- GOAL SELECT ---------------------------------------- */
 .goal-select,
