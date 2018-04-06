@@ -800,7 +800,8 @@ li.date-selector-weekday {
   justify-content: space-between;
   border-bottom: 2px solid #2f3545;
   text-align: left;
-  outline: none; }
+  outline: none;
+  position: relative; }
 
 .step-bullet {
   max-height: 6px;
@@ -811,29 +812,14 @@ li.date-selector-weekday {
   background-color: #e8eaf6; }
 
 .step-action-buttons {
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 5px; }
-
-.remove-step-btn {
-  height: 20px;
-  width: 20px;
-  background: transparent;
-  color: #3b4254;
-  font-size: 32px;
-  font-weight: 200;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 20px;
-  cursor: pointer;
-  border: none;
-  outline: none; }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; }
 
-.create-sub-step-btn {
+.step-show-actions-btn,
+.step-hide-actions-btn {
   height: 20px;
   width: 20px;
   margin-top: 5px;
@@ -846,6 +832,44 @@ li.date-selector-weekday {
   cursor: pointer;
   border: none;
   outline: none; }
+  .step-show-actions-btn.substep-btn,
+  .step-hide-actions-btn.substep-btn {
+    background: #262a37; }
+
+.step-show-actions-btn.substep-btn {
+  margin-right: 8px; }
+
+.step-hide-actions-btn {
+  margin-right: 108px; }
+  .step-hide-actions-btn.substep-btn {
+    margin-right: 76px; }
+
+.complete-step-btn {
+  min-height: 58px;
+  height: 100%;
+  display: block;
+  width: 32px;
+  background-color: #73d9ff;
+  font-size: 14px;
+  cursor: pointer; }
+
+.remove-step-btn {
+  min-height: 58px;
+  height: 100%;
+  display: block;
+  width: 32px;
+  background-color: #f75d90;
+  font-size: 24px;
+  cursor: pointer; }
+
+.create-sub-step-btn {
+  min-height: 58px;
+  height: 100%;
+  display: block;
+  width: 32px;
+  background: #1b1e29;
+  font-size: 24px;
+  cursor: pointer; }
 
 .step-num-count {
   display: -ms-flexbox;
@@ -872,8 +896,6 @@ li.date-selector-weekday {
   background: #1b1d29;
   margin-bottom: 2px;
   margin-left: 15px; }
-  .steplist-substep .remove-step-btn {
-    color: #3b4253; }
   .steplist-substep .step-bullet {
     background-color: #c9cbd5; }
 
@@ -885,6 +907,7 @@ li.date-selector-weekday {
   -ms-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 58px; }
+  min-height: 58px;
+  position: relative; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJidW5kbGUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
