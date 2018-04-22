@@ -262,17 +262,17 @@ a.link {
       height: 3px;
       width: 33vw; } }
   .navigation-highlight.nh-journal {
-    top: 210px; }
+    top: 148px; }
     @media screen and (max-width: 768px) {
       .navigation-highlight.nh-journal {
         top: -2px;
-        right: 33%; } }
+        right: 67%; } }
   .navigation-highlight.nh-roadmap {
-    top: 148px; }
+    top: 210px; }
     @media screen and (max-width: 768px) {
       .navigation-highlight.nh-roadmap {
         top: -2px;
-        right: 67%; } }
+        right: 33%; } }
   @media screen and (max-width: 768px) {
     .navigation-highlight.nh-calendar {
       right: 0%; } }
