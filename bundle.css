@@ -811,15 +811,22 @@ li.date-selector-weekday {
   border-radius: 50%;
   background-color: #e8eaf6; }
 
+.step-action-container {
+  width: 126px;
+  display: flex;
+  justify-content: flex-end; }
+
 .step-action-buttons {
   display: flex;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0; }
+  right: 30px; }
 
-.step-show-actions-btn,
-.step-hide-actions-btn {
+.steplist-substep .step-action-buttons {
+  right: 38px; }
+
+.step-display-actions-btn {
   height: 20px;
   width: 20px;
   margin-top: 5px;
@@ -832,17 +839,13 @@ li.date-selector-weekday {
   cursor: pointer;
   border: none;
   outline: none; }
-  .step-show-actions-btn.substep-btn,
-  .step-hide-actions-btn.substep-btn {
+  .step-display-actions-btn.substep-btn {
     background: #262a37; }
 
-.step-show-actions-btn.substep-btn {
-  margin-right: 8px; }
-
-.step-hide-actions-btn {
-  margin-right: 108px; }
-  .step-hide-actions-btn.substep-btn {
-    margin-right: 76px; }
+.step-display-actions-btn {
+  margin-right: 0px; }
+  .step-display-actions-btn.substep-btn {
+    margin-right: 8px; }
 
 .complete-step-btn {
   min-height: 58px;
